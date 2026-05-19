@@ -19,10 +19,20 @@ body {
   font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
   font-weight: 500;
   overflow-x: hidden;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 html {
   background-color: var(--color-primary);
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
 }
 
 h1, h2, h3, h4, h5, h6 {

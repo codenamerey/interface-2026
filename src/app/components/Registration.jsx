@@ -4,7 +4,7 @@ export default function Registration() {
   const lumaUrl = process.env.NEXT_PUBLIC_LUMA_URL || "https://lu.ma";
 
   return (
-    <section className="relative w-full py-32 font-inter overflow-hidden border-t border-white/5">
+    <section className="relative w-full py-32 font-inter overflow-hidden">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl h-64 bg-gradient-to-r from-primary via-accent-pink to-accent-coral opacity-20 blur-[100px] pointer-events-none"></div>
 
       <div className="relative z-10 max-w-3xl mx-auto px-6 text-center">

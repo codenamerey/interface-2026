@@ -12,7 +12,7 @@ const TIMELINE = [
 
 export default function Agenda() {
   return (
-    <section id="agenda" className="relative w-full py-24 font-inter overflow-hidden border-t border-white/5">
+    <section id="agenda" className="relative w-full py-24 font-inter overflow-hidden">
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-secondary-light/10 rounded-full blur-[120px] pointer-events-none"></div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-8">

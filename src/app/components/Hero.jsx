@@ -24,7 +24,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="min-h-screen text-white font-inter overflow-x-hidden border-b border-white/10">
+    <div className="min-h-screen text-white font-inter overflow-x-hidden\">
       <div
         className="absolute inset-0 pointer-events-none z-0"
         style={{
@@ -49,13 +49,16 @@ export default function Hero() {
 
         <div className="hidden md:flex items-center gap-8 font-mono text-xs uppercase tracking-widest text-white/60">
           {["About", "Speakers", "Agenda", "Venue"].map((item) => (
-            <a
+            <button
               key={item}
-              href={`#${item.toLowerCase()}`}
-              className="hover:text-accent-coral transition-colors duration-200"
+              onClick={() => {
+                const element = document.getElementById(item.toLowerCase());
+                element?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="hover:text-accent-coral transition-colors duration-200 bg-none border-none cursor-pointer"
             >
               {item}
-            </a>
+            </button>
           ))}
         </div>
 
@@ -70,14 +73,14 @@ export default function Hero() {
       </nav>
 
       <main className="relative z-10 flex flex-col items-center text-center px-4 pt-24 pb-12 max-w-7xl mx-auto">
-        <div className="mb-8 inline-flex items-center rounded-full px-6 md:px-8 py-2 border border-[#a56992]/45 bg-[#3a0f3f]/55 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] backdrop-blur-sm">
+        <div className="mb-1 inline-flex items-center rounded-full px-6 md:px-8 py-2 border border-[#a56992]/45 bg-[#3a0f3f]/55 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] backdrop-blur-sm">
           <span className="text-[12px] font-montserrat font-semibold tracking-[0.18em] uppercase text-[#e8a8c9]">
             PUP Computer Engineering Seminar 2026
           </span>
         </div>
 
         <h1
-          className={`text-6xl md:text-8xl lg:text-[7rem] font-montserrat font-extrabold tracking-tight leading-none mb-8 transition-all duration-700 ${
+          className={`text-6xl md:text-8xl lg:text-[7rem] font-montserrat font-extrabold tracking-tight leading-none mb-2 transition-all duration-700 ${
             mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
@@ -92,12 +95,12 @@ export default function Hero() {
           </span>
         </h1>
 
-        <p className="max-w-2xl text-white/70 font-inter font-medium text-base md:text-xl leading-relaxed mb-12">
+        <p className="max-w-2xl text-white/70 font-inter font-medium text-base md:text-xl leading-relaxed mb-9">
           Bridging Core Computer Engineering Principles with Emerging Industry
           Practice.
         </p>
 
-        <div className="flex flex-wrap justify-center gap-4 mb-14 font-montserrat text-sm">
+        <div className="flex flex-wrap justify-center gap-4 mb-10 font-montserrat text-sm">
           {[
             {
               icon: (
