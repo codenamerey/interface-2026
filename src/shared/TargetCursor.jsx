@@ -51,8 +51,13 @@ export default function TargetCursor({
     const touchQuery = window.matchMedia("(pointer: coarse)");
 
     const updatePointerMode = () => {
-      setCanHover(hoverQuery.matches);
-      document.body.classList.toggle("custom-cursor-active", hideDefaultCursor);
+      const hoverMatches = hoverQuery.matches;
+      setCanHover(hoverMatches);
+      if (hoverMatches && hideDefaultCursor) {
+        document.body.classList.add("custom-cursor-active");
+      } else {
+        document.body.classList.remove("custom-cursor-active");
+      }
     };
 
     updatePointerMode();
@@ -68,7 +73,7 @@ export default function TargetCursor({
   }, []);
 
   useEffect(() => {
-    if (!mounted || !cursorRef.current) return;
+    if (!mounted || !cursorRef.current || !canHover) return;
 
     const originalCursor = document.body.style.cursor;
     const hadCursorClass = document.body.classList.contains("custom-cursor-active");
@@ -262,7 +267,7 @@ export default function TargetCursor({
     };
   }, [canHover, constants, hideDefaultCursor, hoverDuration, mounted, moveCursor, parallaxOn, spinDuration, targetSelector]);
 
-  if (!mounted) {
+  if (!mounted || !canHover) {
     return null;
   }
 

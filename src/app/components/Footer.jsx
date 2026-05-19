@@ -18,19 +18,27 @@ export default function Footer() {
 
         <div className="font-mono text-[10px] uppercase tracking-widest text-white/30 text-center md:text-right space-y-1">
           <p>© 2026 Organizing Committee.</p>
-          <a
-            href="https://www.facebook.com/share/1BJvTZ1Ndi/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="pt-2 flex items-center justify-center md:justify-end gap-2 hover:text-white transition-colors"
-          >
-            <span className="w-1.5 h-1.5 rounded-full bg-green-500"></span>
-            Facebook.
-          </a>
-          <p className="pt-2 flex items-center justify-center md:justify-end gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-green-500"></span>
-            Department Site.
-          </p>
+          <div className="pt-2 flex flex-col md:flex-row items-center justify-center md:justify-end gap-2">
+            <a
+              href="https://www.facebook.com/share/1BJvTZ1Ndi/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:text-white transition-colors"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-green-500" />
+              <span>Facebook</span>
+            </a>
+
+            <a
+              href="https://www.facebook.com/PUPCpEOfficial"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:text-white transition-colors"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-green-500" />
+              <span>Department Page</span>
+            </a>
+          </div>
         </div>
       </div>
     </footer>

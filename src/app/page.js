@@ -7,12 +7,14 @@ import Hero from "@/app/components/Hero";
   import Registration from "@/app/components/Registration";
   import Footer from "@/app/components/Footer";
 import ScrollReveal from "@/shared/ScrollReveal";
-  import TargetCursor from "@/shared/TargetCursor";
-  import ScrollToTopButton from "@/shared/ScrollToTopButton";
+import TargetCursor from "@/shared/TargetCursor";
+import ScrollToTopButton from "@/shared/ScrollToTopButton";
+import ClickSpark from "@/shared/ClickSpark";
 
   export default function Home() {
     return (
       <main className="min-h-screen selection:bg-accent-pink selection:text-white">
+        <ClickSpark sparkColor="#FF2F8E" sparkSize={10} sparkRadius={16} sparkCount={10} duration={420}>
         <div id="top" />
         <TargetCursor
           spinDuration={2}
@@ -41,6 +43,7 @@ import ScrollReveal from "@/shared/ScrollReveal";
           <Registration />
         </ScrollReveal>
         <Footer />
+        </ClickSpark>
       </main>
     );
   }
