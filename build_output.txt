@@ -1,0 +1,162 @@
+
+> interface-2026@0.1.0 build
+> next build
+
+  Γû▓ Next.js 14.2.35
+  - Environments: .env.local
+
+   Creating an optimized production build ...
+ Γ£ô Compiled successfully
+   Linting and checking validity of types ...
+
+./src/app/layout.js
+31:9  Warning: A font-display parameter is missing (adding `&display=optional` is recommended). See: https://nextjs.org/docs/messages/google-font-display  @next/next/google-font-display
+31:9  Warning: Custom fonts not added in `pages/_document.js` will only load for a single page. This is discouraged. See: https://nextjs.org/docs/messages/no-page-custom-font  @next/next/no-page-custom-font
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+   Collecting page data ...
+   Generating static pages (0/5) ...
+TypeError: Cannot read properties of undefined (reading 'toString')
+    at eT (C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:219742)
+    at e$ (C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:219858)
+    at C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:13:12708
+    at Array.map (<anonymous>)
+    at eS.icons (C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:13:12701)
+    at C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:13:12823
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at listOnTimeout (node:internal/timers:549:9)
+    at process.processTimers (node:internal/timers:523:7) {
+  digest: '3460537999'
+}
+   Generating static pages (1/5) 
+   Generating static pages (2/5) 
+TypeError: Cannot read properties of undefined (reading 'toString')
+    at eT (C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:219742)
+    at e$ (C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:219858)
+    at C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:13:12708
+    at Array.map (<anonymous>)
+    at eS.icons (C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:13:12701)
+    at C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:13:12823
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at listOnTimeout (node:internal/timers:549:9)
+    at process.processTimers (node:internal/timers:523:7) {
+  digest: '3460537999'
+}
+TypeError: Cannot read properties of undefined (reading 'toString')
+    at eT (C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:219742)
+    at e$ (C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:219858)
+    at C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:13:12708
+    at Array.map (<anonymous>)
+    at eS.icons (C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:13:12701)
+    at C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:13:12823 {
+  digest: '4288947753'
+}
+TypeError: Cannot read properties of undefined (reading 'toString')
+    at eT (C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:219742)
+    at e$ (C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:219858)
+    at C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:13:12708
+    at Array.map (<anonymous>)
+    at eS.icons (C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:13:12701)
+    at C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:13:12823 {
+  digest: '4288947753'
+}
+TypeError: Cannot read properties of undefined (reading 'toString')
+    at eT (C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:219742)
+    at e$ (C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:219858)
+    at C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:13:12708
+    at Array.map (<anonymous>)
+    at eS.icons (C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:13:12701)
+    at C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:13:12823 {
+  digest: '4288947753'
+}
+TypeError: Cannot read properties of undefined (reading 'toString')
+    at eT (C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:219742)
+    at e$ (C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:219858)
+    at C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:13:12708
+    at Array.map (<anonymous>)
+    at eS.icons (C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:13:12701)
+    at C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:13:12823 {
+  digest: '4288947753'
+}
+TypeError: Cannot read properties of undefined (reading 'toString')
+    at eT (C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:219742)
+    at e$ (C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:219858)
+    at C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:13:12708
+    at Array.map (<anonymous>)
+    at eS.icons (C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:13:12701)
+    at C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:13:12823 {
+  digest: '4288947753'
+}
+TypeError: Cannot read properties of undefined (reading 'toString')
+    at eT (C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:219742)
+    at e$ (C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:219858)
+    at C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:13:12708
+    at Array.map (<anonymous>)
+    at eS.icons (C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:13:12701)
+    at C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:13:12823 {
+  digest: '4288947753'
+}
+TypeError: Cannot read properties of undefined (reading 'toString')
+    at eT (C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:219742)
+    at e$ (C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:219858)
+    at C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:13:12708
+    at Array.map (<anonymous>)
+    at eS.icons (C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:13:12701)
+    at C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:13:12823 {
+  digest: '4288947753'
+}
+TypeError: Cannot read properties of undefined (reading 'toString')
+    at eT (C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:219742)
+    at e$ (C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:219858)
+    at C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:13:12708
+    at Array.map (<anonymous>)
+    at eS.icons (C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:13:12701)
+    at C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:13:12823 {
+  digest: '4288947753'
+}
+TypeError: Cannot read properties of undefined (reading 'toString')
+    at eT (C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:219742)
+    at e$ (C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:219858)
+    at C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:13:12708
+    at Array.map (<anonymous>)
+    at eS.icons (C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:13:12701)
+    at C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:13:12823 {
+  digest: '4288947753'
+}
+[Error: An error occurred in the Server Components render. The specific message is omitted in production builds to avoid leaking sensitive details. A digest property is included on this error instance which may provide additional details about the nature of the error.] {
+  digest: '4288947753'
+}
+
+Error occurred prerendering page "/_not-found". Read more: https://nextjs.org/docs/messages/prerender-error
+
+Error: An error occurred in the Server Components render. The specific message is omitted in production builds to avoid leaking sensitive details. A digest property is included on this error instance which may provide additional details about the nature of the error.
+   Generating static pages (3/5) 
+TypeError: Cannot read properties of undefined (reading 'toString')
+    at eT (C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:219742)
+    at e$ (C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:219858)
+    at C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:13:12708
+    at Array.map (<anonymous>)
+    at eS.icons (C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:13:12701)
+    at C:\Users\B1kjuu\Desktop\interface_2026\interface-2026\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:13:12823 {
+  digest: '4288947753'
+}
+[Error: An error occurred in the Server Components render. The specific message is omitted in production builds to avoid leaking sensitive details. A digest property is included on this error instance which may provide additional details about the nature of the error.] {
+  digest: '4288947753'
+}
+
+Error occurred prerendering page "/". Read more: https://nextjs.org/docs/messages/prerender-error
+
+Error: An error occurred in the Server Components render. The specific message is omitted in production builds to avoid leaking sensitive details. A digest property is included on this error instance which may provide additional details about the nature of the error.
+[Error: An error occurred in the Server Components render. The specific message is omitted in production builds to avoid leaking sensitive details. A digest property is included on this error instance which may provide additional details about the nature of the error.] {
+  digest: '4288947753'
+}
+
+Error occurred prerendering page "/components". Read more: https://nextjs.org/docs/messages/prerender-error
+
+Error: An error occurred in the Server Components render. The specific message is omitted in production builds to avoid leaking sensitive details. A digest property is included on this error instance which may provide additional details about the nature of the error.
+ Γ£ô Generating static pages (5/5)
+
+> Export encountered errors on following paths:
+	/_not-found/page: /_not-found
+	/components/page: /components
+	/page: /
