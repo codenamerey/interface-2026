@@ -7,29 +7,29 @@ export default function About() {
   const cards = [
     {
       session: "SESSION 01",
-      title: "Artificial Intelligence",
-      desc: "Neural networks, ML pipelines, and embedded AI architectures.",
+      title: "AI Engineering in the Philippines",
+      desc: "Exploring the skills, challenges, and opportunities in becoming an AI Engineer in the local tech industry.",
       icon: "memory",
       gradient: "from-[#C88CFF] to-[#FF2F8E]"
     },
     {
       session: "SESSION 02",
-      title: "Networks & Cybersecurity",
-      desc: "Network architectures, security best practices, and threat mitigation.",
+      title: "Introduction to Cybersecurity",
+      desc: "Foundations of cybersecurity, threat awareness, and practical approaches to securing systems and networks.",
       icon: "vpn_key",
       gradient: "from-[#FF2F8E] to-[#FF5A4F]"
     },
     {
       session: "SESSION 03",
-      title: "Big Data",
-      desc: "Large-scale data processing, analytics platforms, and insight engineering.",
+      title: "Big Data Analytics",
+      desc: "How industries leverage large-scale data to drive decisions, optimize processes, and create value.",
       icon: "database",
       gradient: "from-[#FF2F8E] to-[#a1005a]"
     },
     {
       session: "SESSION 04",
-      title: "System Development (Full-stack)", 
-      desc: "Full-stack architecture, scalable backends, and modern devops.",
+      title: "Full-Stack Systems Development",
+      desc: "From requirements gathering to production deployment: showing how real teams transform vague ideas into scalable systems",
       icon: "code_blocks",
       gradient: "from-[#FF5A4F] to-[#fb923c]"
     }
