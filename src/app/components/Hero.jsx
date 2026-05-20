@@ -120,7 +120,7 @@ export default function Hero() {
                   <polyline points="12 6 12 12 16 14" />
                 </svg>
               ),
-              label: "08:00 AM – 05:00 PM",
+              label: "08:00 AM – 06:00 PM",
             },
             {
               icon: (

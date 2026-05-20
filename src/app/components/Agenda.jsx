@@ -7,7 +7,7 @@ const TIMELINE = [
   { time: "12:00 PM – 01:00 PM", event: "Lunch Break & Networking", type: "break" },
   { time: "01:00 PM – 02:30 PM", event: "Seminar Session 3: Emerging Practices", type: "session" },
   { time: "02:30 PM – 04:00 PM", event: "Seminar Session 4: Industry Deployment Matrix", type: "session" },
-  { time: "04:00 PM – 05:00 PM", event: "Closing Ceremonies & Certificate Handover", type: "ceremony" },
+  { time: "04:00 PM – 06:00 PM", event: "Closing Ceremonies & Certificate Handover", type: "ceremony" },
 ];
 
 export default function Agenda() {
