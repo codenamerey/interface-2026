@@ -5,11 +5,12 @@ import BorderGlow from "@/shared/BorderGlow";
 import marcEscober from "@/assets/speakers/mark.jpg";
 import asiGuiang from "@/assets/speakers/asi.jpg";
 import rannieOllit from "@/assets/speakers/rannie.jpg";
+import billyFajardo from "@/assets/speakers/billy.jpg";
 
 const SPEAKERS = [
   { id: 1, name: "Mr. Marc Ian Escober", role: "Chief Technology Officer", company: "SOFI AI Tech Solution Inc.", topic: "Seminar Session 1: Artificial Intelligence", image: marcEscober },
   { id: 2, name: "Mr. Asi Guiang", role: "Solutions Architect", company: "Appficiency Inc.", topic: "Introduction to Cybersecurity", image: asiGuiang },
-  { id: 3, name: "Mr. Billy Fajardo", role: "Big Data", company: "To Be Announced", topic: "Seminar Session 3: Big Data", image: null },
+  { id: 3, name: "Mr. Billy Fajardo", role: "Senior Talent Acquisition Manager", company: "Arch Global Services (Philippines) Inc.", topic: "Introduction to Big Data Analytics", image: billyFajardo },
   { id: 4, name: "Mr. Rannie Ollit", role: "Lead Software Engineer", company: "Salescaddie", topic: "From Requirements to Production: Full-Stack AI Systems and Context Engineering ", image: rannieOllit },
 ];
 
