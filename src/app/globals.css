@@ -16,7 +16,7 @@
 body {
   background-color: var(--color-primary);
   color: #FFFFFF; 
-  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
   font-weight: 500;
   overflow-x: hidden;
   scrollbar-width: none;
@@ -36,5 +36,5 @@ html::-webkit-scrollbar {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-montserrat), sans-serif;
+  font-family: "Montserrat", sans-serif;
 }

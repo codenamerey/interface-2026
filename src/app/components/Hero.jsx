@@ -24,7 +24,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="min-h-screen text-white font-inter overflow-x-hidden\">
+    <div className="min-h-screen text-white font-inter overflow-x-hidden">
       <div
         className="absolute inset-0 pointer-events-none z-0"
         style={{
