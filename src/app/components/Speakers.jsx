@@ -8,9 +8,9 @@ import rannieOllit from "@/assets/speakers/rannie.jpg";
 
 const SPEAKERS = [
   { id: 1, name: "Mr. Marc Ian Escober", role: "Chief Technology Officer", company: "SOFI AI Tech Solution Inc.", topic: "Seminar Session 1: Artificial Intelligence", image: marcEscober },
-  { id: 2, name: "Mr. Asi Guiang", role: "Solutions Architect", company: "Appficiency Inc.", topic: "Seminar Session 2: Networks and Cybersecurity", image: asiGuiang },
+  { id: 2, name: "Mr. Asi Guiang", role: "Solutions Architect", company: "Appficiency Inc.", topic: "Introduction to Cybersecurity", image: asiGuiang },
   { id: 3, name: "Mr. Billy Fajardo", role: "Big Data", company: "To Be Announced", topic: "Seminar Session 3: Big Data", image: null },
-  { id: 4, name: "Mr. Rannie Ollit", role: "Lead Software Engineer", company: "Salescaddie", topic: "Seminar Session 4: System Development (Full stack)", image: rannieOllit },
+  { id: 4, name: "Mr. Rannie Ollit", role: "Lead Software Engineer", company: "Salescaddie", topic: "From Requirements to Production: Full-Stack AI Systems and Context Engineering ", image: rannieOllit },
 ];
 
 export default function Speakers() {
@@ -68,7 +68,7 @@ export default function Speakers() {
                 </p>
 
                 <div className="mt-6 pt-5 border-t border-white/10">
-                  <span className="text-[10px] font-mono uppercase tracking-widest text-white/40 block mb-1">Session Topic</span>
+                  <span className="text-[10px] font-mono uppercase tracking-widest text-white/40 block mb-1">Session Topic {speaker.id}</span>
                   <p className="font-inter font-medium text-sm text-white/80 leading-snug">
                     {speaker.topic}
                   </p>
