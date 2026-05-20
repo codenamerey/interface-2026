@@ -2,21 +2,9 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import interfaceLogo from "@/assets/interface-logo.png";
 import bridgeImage from "@/assets/Bridge.png";
 import GradientText from "@/shared/GradientText";
 // Hyperspeed removed — static background used instead
-
-function BridgeIllustration() {
-  return (
-    <Image
-      src={bridgeImage}
-      alt="Bridge illustration"
-      className="w-full mx-auto h-auto"
-      priority
-    />
-  );
-}
 
 function MetaPill({ icon, label }) {
   return (
@@ -60,11 +48,18 @@ export default function Hero() {
 
   return (
     <div
-      className="relative min-h-[78vh] sm:min-h-screen text-white font-inter overflow-x-hidden"
-      style={{ backgroundColor: '#130314', minHeight: '78vh' }}
+      className="relative min-h-screen bg-black text-white font-inter overflow-x-hidden flex flex-col justify-center"
+      style={{ minHeight: "78vh" }}
     >
-      <div className="absolute inset-0 z-0 opacity-100 pointer-events-none bg-[#280327]"></div>
-      <main className="relative z-10 flex flex-col items-center text-center px-4 pt-28 sm:pt-24 md:pt-32 pb-0 max-w-6xl mx-auto pointer-events-none">
+      <div
+        className="absolute inset-0 pointer-events-none z-0"
+        style={{
+          background:
+            "radial-gradient(ellipse 80% 60% at 50% 20%, rgba(161,0,90,0.15) 0%, transparent 70%)",
+        }}
+      />
+
+      <main className="relative z-10 flex flex-col items-center text-center px-4 pt-24 pb-12 max-w-7xl mx-auto w-full pointer-events-none">
 
         <div className="mb-4 sm:mb-5 inline-flex items-center rounded-full px-4 py-1.5 border border-[#a56992]/45 bg-[#3a0f3f]/55 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] backdrop-blur-sm pointer-events-auto">
           <span className="text-[10px] sm:text-[11px] font-montserrat font-semibold tracking-[0.15em] uppercase text-[#e8a8c9] leading-tight">
@@ -129,17 +124,48 @@ export default function Hero() {
           </a>
         </div>
 
-        <div
-          className={`w-full max-w-4xl relative transition-all duration-1000 delay-300 -mx-4 sm:mx-0 mt-0 sm:mt-0 ${
-            mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-          }`}
-          style={{ width: "calc(100% + 2rem)", marginLeft: "-1rem", marginRight: "-1rem" }}
-        >
-          <div className="overflow-hidden">
-            <BridgeIllustration />
+        <div className="relative flex w-full max-w-7xl mx-auto mt-4 items-center justify-center overflow-visible min-h-[108px] sm:min-h-0">
+          <div
+            className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[72vw] sm:w-[420px] h-[140px] sm:h-[220px] rounded-full blur-[34px] sm:blur-[42px] transition-opacity duration-1000 delay-[900ms] pointer-events-none z-0 ${
+              mounted ? "opacity-100" : "opacity-0"
+            }`}
+            style={{
+              background:
+                "radial-gradient(circle at center, rgba(255, 47, 142, 0.42) 0%, rgba(200, 140, 255, 0.22) 28%, rgba(255, 47, 142, 0.1) 50%, transparent 72%)",
+            }}
+          />
+
+          <div
+            className={`w-1/2 flex justify-end -mr-4 sm:-mr-10 md:-mr-14 transition-all duration-[1200ms] ease-[cubic-bezier(0.22,1,0.36,1)] delay-[300ms] z-10 ${
+              mounted ? "translate-x-0 opacity-100" : "-translate-x-16 md:-translate-x-32 opacity-0"
+            }`}
+          >
+            <Image
+              src={bridgeImage}
+              alt="Bridge connect left"
+              priority
+              sizes="(max-width: 640px) 100vw, 50vw"
+              className="block w-[60vw] max-w-[620px] sm:w-[50vw] sm:max-w-[620px] h-auto max-h-[136px] sm:max-h-none object-contain object-right drop-shadow-[0_0_20px_rgba(255,47,142,0.3)]"
+            />
+          </div>
+
+          <div
+            className={`w-1/2 flex justify-start -ml-4 sm:-ml-10 md:-ml-14 transition-all duration-[1200ms] ease-[cubic-bezier(0.22,1,0.36,1)] delay-[300ms] z-10 ${
+              mounted ? "translate-x-0 opacity-100" : "translate-x-16 md:translate-x-32 opacity-0"
+            }`}
+          >
+            <Image
+              src={bridgeImage}
+              alt="Bridge connect right"
+              priority
+              sizes="(max-width: 640px) 100vw, 50vw"
+              className="block w-[60vw] max-w-[620px] sm:w-[50vw] sm:max-w-[620px] h-auto max-h-[136px] sm:max-h-none object-contain object-left -scale-x-100 drop-shadow-[0_0_20px_rgba(255,47,142,0.3)]"
+            />
           </div>
         </div>
       </main>
+
+      <div className="h-16 sm:h-32 bg-gradient-to-b from-transparent to-[#280327] absolute bottom-0 left-0 w-full z-20 pointer-events-none" />
     </div>
   );
 }
