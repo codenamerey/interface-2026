@@ -1,18 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import BorderGlow from "@/shared/BorderGlow";
-
-import marcEscober from "@/assets/speakers/mark.jpg";
-import gladwinDelRosario from "@/assets/speakers/gladwin.jpg";
-import rannieOllit from "@/assets/speakers/rannie.jpg";
-import billyFajardo from "@/assets/speakers/billy.jpg";
-
-const SPEAKERS = [
-  { id: 1, name: "Mr. Marc Ian Escober", role: "Chief Technology Officer", company: "SOFI AI Tech Solution Inc.", topic: "What Does It Actually Take to Be an AI Engineer in the Philippines?", image: marcEscober },
-  { id: 2, name: "Mr. Gladwin Ferdz Del Rosario", role: "President", company: "ICPEP SE – PUP Manila", topic: "Hello World! (Literally and Securely)", image: gladwinDelRosario },
-  { id: 3, name: "Mr. Billy Fajardo", role: "Senior Talent Acquisition Manager", company: "Arch Global Services (Philippines) Inc.", topic: "Data-Driven by Default: How Industry Runs on Big Data Analytics", image: billyFajardo },
-  { id: 4, name: "Mr. Rannie Ollit", role: "Lead Software Engineer", company: "Salescaddie", topic: "From Requirements to Production: Full-Stack AI Systems and Context Engineering ", image: rannieOllit },
-];
+import { speakers } from "@/data/speakers";
 
 export default function Speakers() {
   return (
@@ -28,7 +17,7 @@ export default function Speakers() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {SPEAKERS.map((speaker) => (
+          {speakers.map((speaker) => (
             <BorderGlow
               key={speaker.id}
               className="group cursor-target h-full overflow-hidden rounded-2xl"

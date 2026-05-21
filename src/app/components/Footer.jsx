@@ -1,4 +1,5 @@
 import React from 'react';
+import { siteConfig } from '@/data/siteConfig';
 
 export default function Footer() {
   return (
@@ -20,7 +21,7 @@ export default function Footer() {
           <p>© 2026 Organizing Committee.</p>
           <div className="pt-2 flex flex-col md:flex-row items-center justify-center md:justify-end gap-2">
             <a
-              href="https://www.facebook.com/share/1BJvTZ1Ndi/"
+              href={siteConfig.social.facebook.eventPageUrl}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Share this event on Facebook"
@@ -31,7 +32,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="https://www.facebook.com/PUPCpEOfficial"
+              href={siteConfig.social.facebook.orgPageUrl}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Open PUPCpE Facebook page (opens in new tab)"

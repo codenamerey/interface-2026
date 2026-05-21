@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import { morningSession, afternoonSession } from '@/data/agenda';
 
 import cube from '@/assets/Agenda/cube.png';
 import monitor from '@/assets/Agenda/monitor.png';
@@ -93,71 +94,17 @@ const Icons = {
   ),
 };
 
-const MORNING = [
-  {
-    time: '09:00 AM – 09:45 AM',
-    event: 'Ingress',
-    icon: Icons.LogIn,
-    sub: 'Arrival and registration of attendees (45 mins)',
-  },
-  {
-    time: '09:45 AM – 10:25 AM',
-    event: 'Opening Ceremonies',
-    icon: Icons.Record,
-    sub: 'Call to Order, Prayer, National Anthem, and Remarks',
-  },
-  {
-    time: '10:25 AM – 11:45 AM',
-    event: 'Seminar I & Open Forum',
-    icon: Icons.Globe,
-    sub: 'Main technical presentation followed by Q&A session',
-  },
-  {
-    time: '11:45 AM – 11:55 AM',
-    event: 'Awarding Ceremony',
-    icon: Icons.Trophy,
-    sub: 'Recognition of Speaker I',
-  },
-  {
-    time: '11:55 AM – 01:00 PM',
-    event: 'Lunch Break',
-    icon: Icons.Coffee,
-    sub: 'Networking and interactive booths (65 mins)',
-  },
-];
+const mapIconNameToComponent = (iconName) => Icons[iconName];
 
-const AFTERNOON = [
-  {
-    time: '01:00 PM – 02:30 PM',
-    event: 'Seminar II & Open Forum',
-    icon: Icons.Box,
-    sub: 'Technical session including Speaker II intro and awarding',
-  },
-  {
-    time: '02:30 PM – 04:05 PM',
-    event: 'Seminar III & Open Forum',
-    icon: Icons.Tv,
-    sub: 'Short break followed by deep-dive technical session',
-  },
-  {
-    time: '04:05 PM – 04:10 PM',
-    event: 'Short Break',
-    icon: Icons.Power,
-    sub: 'Brief intermission before the final session',
-  },
-  {
-    time: '04:10 PM – 05:40 PM',
-    event: 'Seminar IV & Open Forum',
-    icon: Icons.Star,
-    sub: 'Final speaker block and industry integration wrap-up',
-  },
-  {
-    time: '05:40 PM – 06:00 PM',
-    event: 'Closing Remarks',
-    icon: Icons.Star,
-    sub: 'Event conclusion and final acknowledgments',
-  },
-];
+const MORNING = morningSession.map(slot => ({
+  ...slot,
+  icon: mapIconNameToComponent(slot.icon),
+}));
+
+const AFTERNOON = afternoonSession.map(slot => ({
+  ...slot,
+  icon: mapIconNameToComponent(slot.icon),
+}));
 
 export default function Agenda() {
   return (
