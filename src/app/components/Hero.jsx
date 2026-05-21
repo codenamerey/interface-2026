@@ -97,14 +97,14 @@ export default function Hero() {
             May 22, 2026
           </p>
           <p className="text-sm text-white/70 font-medium">
-            08:00 AM - 05:00 PM • CEA AVR / Virtual
+            08:00 AM - 05:00 PM • CEA Room 315 / Virtual
           </p>
         </div>
 
         <div className="hidden sm:flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 mb-7 w-full sm:w-auto">
           <MetaPill icon={<CalendarIcon />} label="May 22, 2026" />
           <MetaPill icon={<ClockIcon />} label="08:00 AM – 05:00 PM" />
-          <MetaPill icon={<PinIcon />} label="CEA AVR / Virtual" />
+          <MetaPill icon={<PinIcon />} label="CEA Room 315 / Virtual" />
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 mb-10 w-full max-w-xl px-2 sm:px-0 pointer-events-auto">

@@ -44,7 +44,7 @@ export default function Venue() {
               <div className="relative p-8">
                 <div className="flex items-center gap-3 mb-4">
                   <span className="material-symbols-outlined text-[#f2a8c5] text-2xl transform transition-transform duration-300 group-hover:-translate-y-1">location_on</span>
-                  <h3 className="font-montserrat font-bold text-xl text-white">CEA AVR</h3>
+                  <h3 className="font-montserrat font-bold text-xl text-white">CEA Room 315</h3>
                 </div>
                 <p className="font-inter font-medium text-white/70 leading-relaxed text-sm">
                   State-of-the-art environment for physical networking and collaborative learning sessions.
