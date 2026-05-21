@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import RoboticsLogo from "@/assets/about/robotics-industry.png";
+import icpepLogo from "@/assets/icpep_logo.png";
 import BorderGlow from "@/shared/BorderGlow";
 
 export default function About() {
@@ -58,6 +59,27 @@ export default function About() {
               learning and the rapid evolution of modern tech industries, serving as a partial
               fulfillment of CMPE 408.
             </p>
+
+            <div className="max-w-xl rounded-3xl border border-white/10 bg-white/5 p-5 backdrop-blur-sm">
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
+                <div className="flex h-24 w-24 shrink-0 items-center justify-center rounded-[22px] border border-[#ffd4e5]/30 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.18),rgba(255,255,255,0.08)_46%,rgba(255,255,255,0.04)_100%)] p-3 shadow-[0_16px_34px_rgba(0,0,0,0.18)] backdrop-blur-md">
+                  <Image
+                    src={icpepLogo}
+                    alt="ICpEP logo"
+                    className="h-full w-full object-contain"
+                  />
+                </div>
+
+                <div>
+                  <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-[#f4a7cb]">
+                    Official Partner
+                  </p>
+                  <p className="mt-1 text-base font-semibold text-[#ffebf7] md:text-lg">
+                    In partnership with ICpEP, The Institute of Computer Engineers in the Philippines.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="flex items-center justify-center lg:justify-end">
