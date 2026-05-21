@@ -186,7 +186,7 @@ export default function Agenda() {
                           {slot.event}
                         </h3>
                         <p className="text-sm leading-relaxed text-white/40">
-                          {slot.sub}
+                          {slot.subtitle}
                         </p>
                       </div>
                     </div>
@@ -230,7 +230,7 @@ export default function Agenda() {
                           {slot.event}
                         </h3>
                         <p className="text-sm leading-relaxed text-white/40">
-                          {slot.sub}
+                          {slot.subtitle}
                         </p>
                       </div>
                     </div>
@@ -294,7 +294,7 @@ export default function Agenda() {
                           {slot.event}
                         </h3>
 
-                        {slot.sub && (
+                        {slot.subtitle && (
                           <p
                             className="text-sm leading-relaxed max-w-sm mt-1 block"
                             style={{
@@ -305,7 +305,7 @@ export default function Agenda() {
                               WebkitFontSmoothing: 'antialiased',
                             }}
                           >
-                            {slot.sub}
+                            {slot.subtitle}
                           </p>
                         )}
                       </div>
