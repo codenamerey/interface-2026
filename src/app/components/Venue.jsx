@@ -67,7 +67,7 @@ export default function Venue() {
                   <h3 className="font-montserrat font-bold text-xl text-white">Virtual Access</h3>
                 </div>
                 <p className="font-inter font-medium text-white/70 leading-relaxed text-sm">
-                  Facebook Live link will be distributed to registered virtual participants 48 hours before the event.
+                  The Facebook Live link will be broadcasted and shared through our Facebook Page.
                 </p>
               </div>
             </BorderGlow>
