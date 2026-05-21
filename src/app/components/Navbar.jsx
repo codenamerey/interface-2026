@@ -3,6 +3,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import Image from 'next/image';
 import interfaceLogo from '@/assets/interface-logo.png';
+import { siteConfig } from '@/data/siteConfig';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -79,13 +80,13 @@ export default function Navbar() {
         </button>
 
         <div className="hidden md:flex items-center gap-10">
-          {["About", "Speakers", "Agenda", "Venue"].map((item) => (
+          {siteConfig.navigation.sections.map((section) => (
             <button
-              key={item}
-              onClick={() => scrollToSection(item.toLowerCase())}
+              key={section.id}
+              onClick={() => scrollToSection(section.id)}
               className="text-sm font-semibold text-[#ffebf7]/70 hover:text-[#FF2F8E] transition-colors"
             >
-              {item}
+              {section.label}
             </button>
           ))}
 
@@ -127,13 +128,13 @@ export default function Navbar() {
       {mobileOpen && (
         <div ref={menuRef} className="md:hidden absolute top-full left-0 right-0 bg-[#160410]/95 backdrop-blur-xl border-b border-[#a1005a]/20 animate-slide-down origin-top">
           <div className="flex flex-col gap-2 px-6 py-4 max-w-[1200px] mx-auto">
-            {["About", "Speakers", "Agenda", "Venue"].map((item) => (
+            {siteConfig.navigation.sections.map((section) => (
               <button
-                key={item}
-                onClick={() => scrollToSection(item.toLowerCase())}
+                key={section.id}
+                onClick={() => scrollToSection(section.id)}
                 className="w-full text-left py-3 px-3 rounded-sm text-[#ffebf7]/85 hover:text-white hover:bg-white/5 transition-colors"
               >
-                {item}
+                {section.label}
               </button>
             ))}
           </div>
