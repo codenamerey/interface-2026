@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import bridgeImage from "@/assets/Bridge.png";
+import icpepLogo from "@/assets/icpep_logo.png";
 import GradientText from "@/shared/GradientText";
 
 function MetaPill({ icon, label }) {
@@ -92,18 +93,42 @@ export default function Hero() {
           Bridging Core Computer Engineering Principles with Emerging Industry Practice.
         </p>
 
+        <div className="mb-6 sm:mb-7 w-full max-w-3xl px-2 pointer-events-auto">
+          <div className="mx-auto flex max-w-2xl flex-col items-center gap-4 rounded-[28px] border border-white/12 bg-[linear-gradient(135deg,rgba(255,255,255,0.08),rgba(255,47,142,0.12),rgba(255,90,79,0.08))] px-5 py-5 shadow-[0_18px_60px_rgba(20,0,22,0.34)] backdrop-blur-md sm:flex-row sm:justify-center sm:gap-6 sm:px-7">
+            <div className="flex h-28 w-28 shrink-0 items-center justify-center rounded-[26px] border border-[#ffd4e5]/30 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.2),rgba(255,255,255,0.08)_45%,rgba(255,255,255,0.04)_100%)] p-4 shadow-[0_18px_45px_rgba(0,0,0,0.22)] backdrop-blur-md ring-1 ring-white/10">
+              <Image
+                src={icpepLogo}
+                alt="ICpEP logo"
+                className="h-full w-full object-contain"
+              />
+            </div>
+
+            <div className="text-center sm:text-left">
+              <p className="font-montserrat text-[11px] font-semibold uppercase tracking-[0.24em] text-[#f4b4d2]">
+                In Partnership With
+              </p>
+              <p className="mt-2 font-montserrat text-xl font-bold tracking-tight text-white sm:text-2xl">
+                The Institute of Computer Engineers in the Philippines
+              </p>
+              <p className="mt-1 text-sm text-white/70 sm:text-[15px]">
+                ICpEP joins INTERFACE 2026 in connecting academic foundations with the realities of professional computer engineering practice.
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div className="sm:hidden flex flex-col items-center gap-1 mb-6 text-center">
           <p className="font-montserrat text-xl font-bold text-[#FF2F8E] tracking-tight">
             May 22, 2026
           </p>
           <p className="text-sm text-white/70 font-medium">
-            08:00 AM - 05:00 PM • CEA Room 315 / Virtual
+            09:00 AM - 06:00 PM • CEA Room 315 / Virtual
           </p>
         </div>
 
         <div className="hidden sm:flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 mb-7 w-full sm:w-auto">
           <MetaPill icon={<CalendarIcon />} label="May 22, 2026" />
-          <MetaPill icon={<ClockIcon />} label="08:00 AM – 05:00 PM" />
+          <MetaPill icon={<ClockIcon />} label="09:00 AM – 06:00 PM" />
           <MetaPill icon={<PinIcon />} label="CEA Room 315 / Virtual" />
         </div>
 
